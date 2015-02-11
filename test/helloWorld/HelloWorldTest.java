@@ -12,4 +12,9 @@ public class HelloWorldTest {
 		HelloWorld hello = new HelloWorld();
 		assertEquals("A test for Hello World String", "Hello World", hello.sayHello());
 	}
+	@Test
+	public void testAddition(){
+		HelloWorld hello = new HelloWorld();
+		assertEquals("Testing sum", 3, hello.sum(1,2));
+	}
 }
