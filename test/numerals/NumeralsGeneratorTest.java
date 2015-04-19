@@ -8,12 +8,12 @@ import uk.co.bbc.roman.*;
 import java.util.LinkedList;
 
 public class NumeralsGeneratorTest {
-	@Test
-	public void testSingleDigit() {
-		NumeralGenerator ng = new NumeralGenerator();
+    @Test
+    public void testSingleDigit() {
+	NumeralGenerator ng = new NumeralGenerator();
         assertEquals("Single Digit Test for 1", "I", ng.generate(1));
         assertEquals("Single Digit Test for 5", "V", ng.generate(5));
-	}
+    }
 
     @Test
     public void testDoubleDigit() {
