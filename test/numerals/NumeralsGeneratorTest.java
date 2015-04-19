@@ -14,7 +14,7 @@ public class NumeralsGeneratorTest {
         assertEquals("Single Digit Test for 1", "I", ng.generate(1));
         assertEquals("Single Digit Test for 5", "V", ng.generate(5));
 	}
-	
+
     @Test
     public void testDoubleDigit() {
         NumeralGenerator ng = new NumeralGenerator();

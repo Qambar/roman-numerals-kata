@@ -25,12 +25,12 @@ public class NumeralGenerator implements NumeralGeneratorInterface  {
         int index                   = 0;
 
         //Return Result
-        String result               = "";        
+        String result               = "";
 
-        //Numbers to reverse digitsStack linkedlist 
+        //Numbers to reverse digitsStack linkedlist
         LinkedList<Integer> digitsStack  = DigitsUtils.convertNumberToReverseDigits(num);
-        
-    
+
+
         int sizeOfKeyArray = key.length;
         int numberOfDigits = digitsStack.size();
 
@@ -41,7 +41,7 @@ public class NumeralGenerator implements NumeralGeneratorInterface  {
             if ( index < sizeOfKeyArray && key[index] != null) {
                 result =  key[index] + result;
             }
-            
+
         }
         //if it is a thousand number
         if (numberOfDigits > 0) {
