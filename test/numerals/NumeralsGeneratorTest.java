@@ -24,6 +24,6 @@ public class NumeralsGeneratorTest {
     @Test
     public void testLargestNumber() {
         NumeralGenerator ng = new NumeralGenerator();
-        assertEquals("Largest Number Test for 3999", "MMMCMXCIX", ng.generate(999));
+        assertEquals("Largest Number Test for 3999", "MMMCMXCIX", ng.generate(3999));
     }
 }

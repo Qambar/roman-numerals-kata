@@ -1,6 +1,5 @@
 package uk.co.bbc.roman;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import org.apache.commons.lang3.StringUtils;
 import uk.co.bbc.utils.DigitsUtils;
@@ -35,21 +34,23 @@ public class NumeralGenerator implements NumeralGeneratorInterface  {
         int sizeOfKeyArray = key.length;
         int numberOfDigits = digitsStack.size();
 
+
         // This loop works for 1-999
-        for (int i = 2; numberOfDigits > 0; i--, numberOfDigits--) {
+        for (int i = 2; numberOfDigits > 0 && i >= 0; i--, numberOfDigits--) {
             index = digitsStack.pop() + (i * 10);
             if ( index < sizeOfKeyArray && key[index] != null) {
                 result =  key[index] + result;
-                System.out.println("Letter: " + key[index]);
             }
+            
         }
+        //if it is a thousand number
+        if (numberOfDigits > 0) {
+            //For thousands we put 'M'
+            int thousands = digitsStack.pop();
 
-        //For thousands we put 'M'
-        int thousands = digitsStack.pop();
-
-        //We append it to the begining of the String
-        result = StringUtils.repeat("M", thousands) + result;
-
+            //We append it to the begining of the String
+            result = StringUtils.repeat("M", thousands) + result;
+        }
         return result;
     }
 

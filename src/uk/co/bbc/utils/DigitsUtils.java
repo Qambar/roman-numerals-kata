@@ -1,5 +1,8 @@
 package uk.co.bbc.utils;
 
+import java.util.LinkedList;
+import java.util.Collections;
+
 public class DigitsUtils {
     public static LinkedList<Integer> convertNumberToReverseDigits(int num) {
         LinkedList<Integer> stack = new LinkedList<Integer>();

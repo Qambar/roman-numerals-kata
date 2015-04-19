@@ -1,11 +1,13 @@
 <?xml version="1.0"?>   
-<project name="java-junit-template-project" default="test" basedir=".">
+<project name="roman-numerals-generator" default="test" basedir=".">
   <property name="main.build.dir" value="build/main" />  
   <property name="main.src.dir" value="src" />
   <property name="test.build.dir" value="build/test" />
   <property name="test.src.dir" value="test" />
 
-  <path id="classpath.base" />
+  <path id="classpath.base">
+    <pathelement location="lib/commons-lang3-3.4.jar" />
+  </path>
 
   <path id="classpath.test">
     <pathelement location="lib/junit-4.11.jar" />
