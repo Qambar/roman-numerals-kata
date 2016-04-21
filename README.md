@@ -27,10 +27,3 @@ For an in-depth description of Roman Numerals, see http://en.wikipedia.org/wiki/
 
 ## Contribute
 Github is all about contributions. If you think you can collaborate or improve this, please make sure you send me a pull request
-
-
-## Template Project Credits 
-https://github.com/mplacona/java-junit-template-project
-Copyright (c) 2013 [@marcos_placona](https://twitter.com/marcos_placona), [Marcos Placona](https://plus.google.com/111557456465418142877).  
-[Placona.co.uk](http://www.placona.co.uk)
-Licensed under the MIT license.
