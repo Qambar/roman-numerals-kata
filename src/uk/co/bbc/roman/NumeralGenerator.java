@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class NumeralConverter implements NumeralConverterInterface {
+public class NumeralGenerator implements NumeralGeneratorInterface {
     private static final Map<Integer, String> decToRoman = new TreeMap<Integer,String>(Collections.reverseOrder());
 
     static
@@ -30,7 +30,7 @@ public class NumeralConverter implements NumeralConverterInterface {
      * @param  num [takes int as input ]
      * @return     [returns a String roman numeral]
      */
-    public String convert(int num) {
+    public String generate(int num) {
         if (!isValid(num)) {
             throw new IllegalArgumentException();
         }
