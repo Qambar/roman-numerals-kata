@@ -1,4 +1,4 @@
-# Roman Numerals Generator - JAVA VERSION
+# Roman Numerals Generator - PHP APP VERSION
 ----------
 The problem
 
